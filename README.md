@@ -36,12 +36,13 @@ The spaCy NLP model you will need is en_core_web_md.
 ###### Sentiment analysis
 The sentiment analysis function of this code is useful in understanding customer opinion of a product or product category. It could also be applied to people insights and survey responses across industries. 
 
+![Sentiment analysis example](finalCapstone/Sentiment_analysis_example.png)
 
 
 ###### Similarity calculator
 The similarity function of this code is useful in understanding the deviation in opinion (how broad opinions are) of a product or product category. If user data were captured, you could even analyse similarities between opinions expressed by the same user. As an expansion, you could also adapt the calculator to assess similarity across every review, and across reviews of the same product. This information could be presented in a Word Cloud, which is easily shared with non-technical specialists.
 
-
+![Similarity analysis](finalCapstone/Similarity_analysis_example.png)
 
 
 ## Credits
