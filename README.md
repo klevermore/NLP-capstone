@@ -1,6 +1,7 @@
 # Sentiment Analysis and Similarity Calculator: HyperionDev final capstone
 
-This repository contains code for sentiment analysis of a dataset of Amazon product reviews downloaded via Kaggle. The analysis involves cleaning the data, creating a function for sentiment analysis, and calculating similarity between reviews.
+This repository contains code for sentiment analysis of a dataset of Amazon product reviews downloaded via Kaggle. The analysis involves cleaning the data, analysing sentiment, and calculating similarity between reviews.
+
 
 ## Table of Contents
 
@@ -14,43 +15,36 @@ This repository contains code for sentiment analysis of a dataset of Amazon prod
       Dependencies
     Usage
     Credits
+
     
 ## What does this tool do?
 
-• Check the sentiment and polarity of reviews.
-• Examine the similarity between specific reviews and two randomly selected reviews.
-• Feel free to adapt and use the provided functions for your own projects.
+###### Checks the sentiment of reviews.
+This code analyses the sentiment a customer has towards a product according to their online review. 'Sentiment' is a positive, negative or neutral response described by polarity (a score of -1 to 1, with -1 being negative and 1 being positive), and subjectivity (a score beteween 0 and 1), which tells us about how much of the review is due to subjective reasons or facts.
 
-## Building
+###### Examines the similarity between specific reviews and two randomly selected reviews.
+This code analyses the similarity between reviews chosen by the data scientist, and chosen at random. It will present a similarity score between 0 and 1.
 
-###### Step 1: Read in and clean the data
 
-To read in and clean the data, the following steps are taken:
+## Installation
+Please install spaCy, pandas and TextBlob. 
+The spaCy NLP model you will need is en_core_web_md. 
 
-    Import necessary libraries: spaCy, pandas, and TextBlob.
-    Load the spaCy NLP model (en_core_web_md).
-    Read in the review data from a CSV file (amazon_product_reviews.csv).
-    Remove missing values in the 'reviews.text' column.
-    Define a function (clean_reviews) to tokenize reviews and remove stop words.
-    Apply the clean_reviews function to create a new column ('ready_reviews') in the DataFrame with cleaned reviews.
-
-###### Step 2: Create a Function for Sentiment Analysis
-
-A function (analyse_sentiment) is created for sentiment analysis. It uses the TextBlob library to analyze sentiment and calculate polarity for cleaned customer reviews. The function returns both sentiment and polarity for further analysis.
-
-###### Step 3: Calculate Similarity Between Reviews
-
-To calculate the similarity between reviews, specific reviews are selected based on the PDF instructions. The similarity is measured using spaCy's semantic similarity score. Additionally, a personal idea involves comparing similarity between two randomly selected reviews for reusability.
-
-###### Dependencies
-
-• spaCy
-• pandas
-• TextBlob
 
 ## Usage
 
+###### Sentiment analysis
+The sentiment analysis function of this code is useful in understanding customer opinion of a product or product category. It could also be applied to people insights and survey responses across industries. 
 
-{{ADD PICTURES}}
+
+
+###### Similarity calculator
+The similarity function of this code is useful in understanding the deviation in opinion (how broad opinions are) of a product or product category. If user data were captured, you could even analyse similarities between opinions expressed by the same user. As an expansion, you could also adapt the calculator to assess similarity across every review, and across reviews of the same product. This information could be presented in a Word Cloud, which is easily shared with non-technical specialists.
+
+
+
 
 ## Credits
+This tool was built by me, Kirsten Levermore, with great support from my mentors at HyperionDev, Keenan Du Plessis, Ruud Fusha and Tselena Moeti. 
+
+## Feel free to adapt and use the provided functions for your own projects.
